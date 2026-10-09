@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jennosa Pools, Inc. (website concept)</title>
+<meta name="description" content="Website concept for Jennosa Pools, Inc. of Ronkonkoma, NY: pool renovations with new plumbing, steel stairs, cement bottoms, heaters, deck jets and new liners, plus pool openings and service.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800;900&family=Red+Hat+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --navy:#0A1F3A;--navy-2:#122E52;--navy-3:#1B3D68;--aqua:#2BD4D9;--aqua-d:#0B7C85;--aqua-l:#D4F6F7;
+ --tile:#F3F7F9;--grout:#D8E3EA;--white:#fff;--ink:#0A1F3A;--muted:#47596F;--warn:#C2410C;
+ --s1:4px;--s2:8px;--s3:16px;--s4:24px;--s5:32px;--s6:48px;--s7:72px;--s8:112px;
+ --wrap:1240px;--r:6px;
+ --display:"Red Hat Display",system-ui,sans-serif;--body:"Red Hat Text",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{margin:0;font-family:var(--body);font-size:17.5px;line-height:1.65;color:var(--ink);background:var(--tile);overflow-x:hidden}
+a{color:var(--aqua-d)}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0}
+p{margin:0 0 var(--s3)}
+:focus-visible{outline:3px solid var(--aqua);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--s5)}
+.concept{background:#06152A;color:#D7E6F2;font-size:14px;text-align:center;padding:var(--s2) var(--s3);line-height:1.45}
+.concept a{color:var(--aqua);font-weight:600}
+.tilebg{background-color:var(--navy);background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:48px 48px}
+
+header{position:sticky;top:0;z-index:30;background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+.hbar{display:flex;align-items:center;gap:var(--s4);min-height:78px}
+.logo{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none;margin-right:auto}
+.logo b{font-family:var(--display);font-weight:900;font-size:22px;letter-spacing:.02em;display:block;line-height:1}
+.logo small{display:block;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#9FC0D9;margin-top:4px}
+nav ul{display:flex;list-style:none;margin:0;padding:0;gap:var(--s1)}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;color:#E5EEF6;text-decoration:none;font-weight:600;font-size:15.5px;border-bottom:3px solid transparent}
+nav a:hover{border-color:var(--aqua)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;font-family:var(--display);font-weight:800;font-size:16.5px;letter-spacing:.01em;text-decoration:none;border:2px solid transparent;border-radius:var(--r);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn-aqua{background:var(--aqua);color:var(--navy)}
+.btn-aqua:hover{background:#6BE6E9}
+.btn-ghost{border-color:rgba(255,255,255,.5);color:#fff;background:transparent}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-3)}
+.hcall{min-height:46px;font-size:15.5px;padding:0 18px}
+.menu-btn{display:none;width:48px;height:48px;background:transparent;border:2px solid rgba(255,255,255,.35);border-radius:var(--r);cursor:pointer;color:#fff;font:700 13px var(--body)}
+
+/* hero */
+.hero{color:#fff;padding:var(--s7) 0 var(--s8);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:var(--s6);align-items:center}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--aqua);margin-bottom:var(--s4)}
+h1{font-size:clamp(40px,5.6vw,80px);font-weight:900;letter-spacing:-.03em;line-height:.98;margin-bottom:var(--s4)}
+h1 span{display:block;color:var(--aqua)}
+.lede{font-size:clamp(18px,1.4vw,20px);color:#C9D9E8;max-width:31em;margin-bottom:var(--s5)}
+.actions{display:flex;flex-wrap:wrap;gap:var(--s3)}
+.xsec{position:relative;background:var(--navy-2);border:1px solid rgba(255,255,255,.14);padding:var(--s4)}
+.xsec svg{display:block;width:100%;height:auto}
+.xsec .cap{display:flex;justify-content:space-between;font-size:13px;color:#9FC0D9;letter-spacing:.08em;text-transform:uppercase;margin-bottom:var(--s3);gap:var(--s3)}
+.flow{stroke-dasharray:6 8;animation:flow 1.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-28}}
+.jet{stroke-dasharray:4 6;animation:flow 1s linear infinite}
+
+/* waterline proof */
+.waterline{background:var(--white);border-bottom:1px solid var(--grout)}
+.wl-row{display:grid;grid-template-columns:repeat(4,1fr)}
+.wl-row > div{padding:var(--s5) var(--s4);border-right:1px solid var(--grout)}
+.wl-row > div:last-child{border-right:0}
+.wl-row b{display:block;font-family:var(--display);font-weight:900;font-size:34px;letter-spacing:-.02em;line-height:1.1}
+.wl-row span{font-size:15.5px;color:var(--muted)}
+.tileband{height:28px;background-color:var(--aqua-d);background-image:linear-gradient(90deg,rgba(255,255,255,.9) 2px,transparent 2px),linear-gradient(rgba(255,255,255,.9) 2px,transparent 2px),linear-gradient(45deg,transparent 46%,var(--aqua) 46% 54%,transparent 54%);background-size:28px 28px}
+
+section{padding:var(--s8) 0}
+.h2{font-size:clamp(32px,3.6vw,52px);font-weight:900;letter-spacing:-.025em;margin-bottom:var(--s4)}
+.intro{font-size:19px;color:var(--muted);max-width:34em}
+.label{font-family:var(--display);font-weight:800;font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--aqua-d);margin-bottom:var(--s3);display:block}
+
+/* ledger */
+.ledger-wrap{display:grid;grid-template-columns:.8fr 1.6fr;gap:var(--s7);align-items:start}
+.ledger-wrap .sticky{position:sticky;top:120px}
+.ledger{border-top:3px solid var(--navy)}
+.row{display:grid;grid-template-columns:64px 1fr 1.25fr;gap:var(--s4);padding:var(--s4) 0;border-bottom:1px solid var(--grout);align-items:start}
+.row .no{font-family:var(--display);font-weight:900;font-size:15px;color:var(--aqua-d);padding-top:6px;letter-spacing:.08em}
+.row h3{font-size:24px;font-weight:800;letter-spacing:-.01em}
+.row p{margin:0;color:var(--muted);font-size:16.5px}
+.row svg{display:block;margin-bottom:var(--s2)}
+.also{margin-top:var(--s5);display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--grout);background:#fff}
+.also div{padding:var(--s4)}
+.also div+div{border-left:1px solid var(--grout)}
+.also h3{font-size:21px;margin-bottom:var(--s2)}
+.also p{margin:0;color:var(--muted);font-size:16.5px}
+
+/* slider */
+.ba{background:#fff;border-top:1px solid var(--grout);border-bottom:1px solid var(--grout)}
+.ba-head{display:grid;grid-template-columns:1fr 1fr;gap:var(--s6);align-items:end;margin-bottom:var(--s6)}
+.compare{position:relative;border:1px solid var(--grout);background:#E9F1F5;user-select:none;touch-action:pan-y}
+.compare svg{display:block;width:100%;height:auto}
+.compare .after{position:absolute;inset:0;clip-path:inset(0 0 0 var(--pos,50%))}
+.compare .handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:4px;margin-left:-2px;background:var(--navy);pointer-events:none}
+.compare .handle::after{content:"";position:absolute;top:50%;left:50%;width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:var(--navy) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 52'%3E%3Cpath d='M20 18l-8 8 8 8M32 18l8 8-8 8' stroke='%232BD4D9' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/52px no-repeat;box-shadow:0 0 0 4px #fff}
+.compare .tagL,.compare .tagR{position:absolute;top:var(--s3);font-family:var(--display);font-weight:800;font-size:13px;letter-spacing:.16em;text-transform:uppercase;padding:6px 12px;pointer-events:none}
+.compare .tagL{left:var(--s3);background:#5B4A2E;color:#fff}
+.compare .tagR{right:var(--s3);background:var(--aqua);color:var(--navy)}
+.compare input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.compare:focus-within{outline:3px solid var(--aqua);outline-offset:4px}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);margin-top:var(--s4)}
+.legend h3{font-size:18px;margin-bottom:var(--s2)}
+.legend ul{margin:0;padding-left:20px;color:var(--muted);font-size:16.5px}
+.note{font-size:14.5px;color:var(--muted);border-left:3px solid var(--aqua-d);padding-left:12px;margin-top:var(--s4)}
+
+/* addon booking */
+.addon{color:#fff}
+.addon-head{display:grid;grid-template-columns:1.2fr 1fr;gap:var(--s6);margin-bottom:var(--s6);align-items:end}
+.addon .label{color:var(--aqua)}
+.addon .intro{color:#C9D9E8}
+.price{border:1px solid rgba(255,255,255,.2);padding:var(--s4);background:rgba(255,255,255,.04)}
+.price b{font-family:var(--display);font-weight:900;font-size:44px;line-height:1;color:var(--aqua);display:block;margin:var(--s1) 0 var(--s2)}
+.price ul{margin:var(--s3) 0 0;padding-left:20px;font-size:16px;color:#D7E6F2}
+.booker{display:grid;grid-template-columns:1.5fr 1fr;background:#fff;color:var(--ink)}
+.bk-main{padding:var(--s5)}
+.bk-step{border:0;margin:0 0 var(--s5);padding:0}
+.bk-step legend{font-family:var(--display);font-weight:800;font-size:19px;margin-bottom:var(--s3);display:flex;align-items:center;gap:12px;padding:0}
+.bk-step legend i{font-style:normal;width:32px;height:32px;display:grid;place-items:center;background:var(--navy);color:var(--aqua);font-size:15px}
+.opts{display:grid;gap:var(--s2)}
+.svc{grid-template-columns:repeat(3,1fr)}
+.days{grid-template-columns:repeat(5,1fr)}
+.times{grid-template-columns:repeat(5,1fr)}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;margin:0}
+.opt label{display:flex;flex-direction:column;justify-content:center;min-height:56px;padding:10px 12px;border:2px solid var(--grout);cursor:pointer;font-weight:600;font-size:15.5px;line-height:1.25;background:var(--tile);height:100%}
+.opt label small{font-weight:500;color:var(--muted);font-size:13.5px}
+.days .opt label,.times .opt label{align-items:center;text-align:center}
+.opt label:hover{border-color:var(--aqua-d)}
+.opt input:checked + label{border-color:var(--navy);background:var(--navy);color:#fff}
+.opt input:checked + label small{color:#BFD3E4}
+.opt input:focus-visible + label{outline:3px solid var(--aqua);outline-offset:2px}
+.opt input:disabled + label{opacity:.4;cursor:not-allowed;text-decoration:line-through}
+.bk-side{background:var(--navy-2);color:#fff;padding:var(--s5);display:flex;flex-direction:column}
+.bk-side h3{font-size:22px;margin-bottom:var(--s4)}
+.sum{margin:0 0 var(--s4);display:grid;gap:var(--s3)}
+.sum dt{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#9FC0D9;font-weight:700}
+.sum dd{margin:2px 0 0;font-size:18px;font-weight:600}
+.sum dd.empty{color:#7F9BB5;font-weight:500}
+.bk-side .demo-note{color:#B7CBDC}
+.sample{margin-top:var(--s4);font-size:14.5px;color:#C9D9E8;border-left:3px solid var(--aqua);padding-left:12px}
+
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-weight:600;font-size:15.5px}
+input[type=text],input[type=tel],input[type=email],select,textarea{font:inherit;font-size:17px;min-height:52px;padding:12px 14px;border:2px solid #C3D2DC;border-radius:var(--r);background:#fff;color:var(--ink);width:100%}
+textarea{min-height:120px;resize:vertical}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--aqua);outline-offset:1px;border-color:var(--navy)}
+.err-msg{display:none;color:var(--warn);font-size:14px;font-weight:600}
+.field.err input,.field.err select,.field.err textarea{border-color:var(--warn)}
+.field.err .err-msg,.bk-step.err .err-msg{display:block}
+.demo-note{font-size:14px;color:var(--muted);margin:var(--s3) 0 0}
+.done{padding:var(--s6) var(--s5);background:#fff;border-top:6px solid var(--aqua)}
+.done h3{font-size:28px;margin-bottom:var(--s2)}
+
+/* reviews */
+.rv-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--s4)}
+.rv{margin:0;background:#fff;border:1px solid var(--grout);padding:var(--s5);position:relative}
+.rv::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--aqua)}
+.rv blockquote{margin:0 0 var(--s3);font-family:var(--display);font-weight:700;font-size:23px;line-height:1.3;letter-spacing:-.01em}
+.rv.big{grid-column:span 7;grid-row:span 2;background:var(--navy);color:#fff;border-color:var(--navy);display:flex;flex-direction:column;justify-content:space-between}
+.rv.big blockquote{font-size:clamp(28px,2.8vw,40px);line-height:1.18}
+.rv.big figcaption{color:#9FC0D9}
+.rv.sm{grid-column:span 5}
+figcaption{font-size:15px;color:var(--muted)}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:var(--s7)}
+.spec{border-top:3px solid var(--navy);margin:var(--s4) 0 0}
+.spec div{display:grid;grid-template-columns:120px 1fr;gap:var(--s3);padding:var(--s3) 0;border-bottom:1px solid var(--grout)}
+.spec dt{font-family:var(--display);font-weight:800;font-size:13.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--aqua-d);padding-top:3px}
+.spec dd{margin:0;font-size:18px}
+form.contact{background:#fff;border:1px solid var(--grout);padding:var(--s5)}
+
+footer{color:#C9D9E8;padding:var(--s7) 0 var(--s7)}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--s6)}
+footer h3{color:#fff;font-size:18px;margin-bottom:var(--s3)}
+footer a{color:var(--aqua)}
+.disclaimer{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid rgba(255,255,255,.14);font-size:14px;color:#AFC3D5}
+.sticky-call{display:none}
+
+@media (max-width:1060px){
+ .hero-grid,.ledger-wrap,.ba-head,.addon-head,.booker,.contact-grid{grid-template-columns:1fr}
+ .ledger-wrap,.contact-grid{gap:var(--s5)}
+ .ba-head,.addon-head{gap:var(--s4)}
+ .ledger-wrap .sticky{position:static}
+ .wl-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .wl-row > div:nth-child(2){border-right:0}
+ .wl-row > div:nth-child(-n+2){border-bottom:1px solid var(--grout)}
+ .rv.big,.rv.sm{grid-column:1/-1;grid-row:auto}
+ .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+ .menu-btn{display:block}
+ nav{position:absolute;left:0;right:0;top:100%;background:var(--navy);display:none;padding:var(--s3) var(--s4) var(--s4);border-bottom:1px solid rgba(255,255,255,.15)}
+ nav.open{display:block}
+ nav ul{flex-direction:column}
+ nav a{width:100%;font-size:18px}
+}
+@media (max-width:640px){
+ body{font-size:17px}
+ .wrap{padding:0 var(--s3)}
+ section{padding:var(--s7) 0}
+ .hero{padding:var(--s6) 0 var(--s7)}
+ .hcall{display:none}
+ .xsec{padding:var(--s3)}
+ .actions .btn{flex:1 1 100%}
+ .wl-row b{font-size:21px}
+ .wl-row > div{padding:var(--s4) var(--s3)}
+ .row{grid-template-columns:44px 1fr;gap:var(--s2) var(--s3)}
+ .row p{grid-column:2}
+ .also{grid-template-columns:1fr}
+ .also div+div{border-left:0;border-top:1px solid var(--grout)}
+ .legend{grid-template-columns:1fr;gap:var(--s3)}
+ .svc{grid-template-columns:1fr}
+ .days{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+ .days .opt label{padding:8px 2px;font-size:14px}
+ .days .opt label small{font-size:12px}
+ .times .opt:last-child{grid-column:1/-1}
+ .compare .tagL,.compare .tagR{font-size:11px;padding:4px 8px;top:8px}
+ .compare .tagL{left:8px}.compare .tagR{right:8px}
+ .times{grid-template-columns:repeat(2,1fr)}
+ .bk-main,.bk-side,form.contact,.rv{padding:var(--s4)}
+ .fgrid{grid-template-columns:1fr}
+ .spec div{grid-template-columns:1fr;gap:2px}
+ .f-grid{grid-template-columns:1fr}
+ .sticky-call{display:flex;position:fixed;left:var(--s3);right:var(--s3);bottom:var(--s3);z-index:40;min-height:56px;box-shadow:0 12px 30px -8px rgba(0,0,0,.45)}
+ footer{padding-bottom:120px}
+}
+</style>
+</head>
+<body>
+<div class="concept">Website concept by <a href="https://www.lisettecolon.com">Lisette Colon</a>. A sample, not the official Jennosa Pools, Inc. site.</div>
+
+<header>
+ <div class="wrap hbar">
+  <a class="logo" href="#top" aria-label="Jennosa Pools, home">
+   <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><rect x="1" y="1" width="42" height="42" fill="none" stroke="#2BD4D9" stroke-width="2"/><path d="M1 15H43M1 29H43M15 1V43M29 1V43" stroke="#2BD4D9" stroke-opacity=".35" stroke-width="1.5"/><path d="M6 31c4-4 8-4 12 0s8 4 12 0 6-3 8-1" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M14 8v14c0 4-2 6-6 6" stroke="#2BD4D9" stroke-width="3.2" fill="none" stroke-linecap="round"/></svg>
+   <span><b>JENNOSA</b><small>Pools, Inc.</small></span>
+  </a>
+  <nav id="nav" aria-label="Main">
+   <ul>
+    <li><a href="#work">Renovations</a></li>
+    <li><a href="#before-after">Before and after</a></li>
+    <li><a href="#book">Book a visit</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+  </nav>
+  <a class="btn btn-aqua hcall" href="tel:+16317616300">(631) 761-6300</a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero tilebg">
+ <div class="wrap hero-grid">
+  <div>
+   <p class="eyebrow">Ronkonkoma pool renovations</p>
+   <h1>Rebuilt from the plumbing up.<span>Ready for summer.</span></h1>
+   <p class="lede">Jennosa Pools renovates tired pools with new plumbing, steel stairs, cement bottoms, heaters, deck jets and new liners. They handle pool openings and service too. Ask for Mike.</p>
+   <div class="actions">
+    <a class="btn btn-aqua" href="#book">Book an opening or service</a>
+    <a class="btn btn-ghost" href="tel:+16317616300">Call (631) 761-6300</a>
+   </div>
+  </div>
+  <div class="xsec">
+   <div class="cap"><span>Section view, renovated pool</span><span>Illustration</span></div>
+   <svg viewBox="0 0 620 400" role="img" aria-label="Technical cross-section illustration of a renovated pool showing new plumbing lines, steel stairs, deck jets, a heater and a cement bottom">
+    <defs>
+     <pattern id="hx" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M0 16L16 0" stroke="#3E5F86" stroke-width="1.4"/></pattern>
+     <linearGradient id="hwat" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#2BD4D9" stop-opacity=".55"/><stop offset="1" stop-color="#1A7FA8" stop-opacity=".7"/></linearGradient>
+    </defs>
+    <path d="M0 120H620V400H0Z" fill="url(#hx)" opacity=".7"/>
+    <path d="M0 112H620" stroke="#9FC0D9" stroke-width="2"/>
+    <path d="M70 120V250Q70 300 120 310L300 330H470Q520 330 520 280V120Z" fill="#0A1F3A" stroke="#E8F1F7" stroke-width="3"/>
+    <path d="M76 134V250Q76 294 122 304L300 324H470Q514 324 514 280V134Z" fill="url(#hwat)"/>
+    <path d="M76 134H514" stroke="#E8F1F7" stroke-width="2" stroke-dasharray="10 6"/>
+    <path d="M122 304L300 324H470" stroke="#C8D3DC" stroke-width="8"/>
+    <g stroke="#E8F1F7" stroke-width="3" fill="none"><path d="M462 120V150H500V180H514M462 150V180H486V210H514"/><path d="M436 104V190" stroke-width="4"/><path d="M436 104Q436 90 450 90"/></g>
+    <path class="flow" d="M300 340V372H560V250H580" stroke="#2BD4D9" stroke-width="4" fill="none"/>
+    <path class="flow" d="M90 260H40V372H300" stroke="#2BD4D9" stroke-width="4" fill="none"/>
+    <rect x="548" y="182" width="56" height="70" fill="#0A1F3A" stroke="#E8F1F7" stroke-width="3"/>
+    <g stroke="#FF8A5B" stroke-width="3" fill="none"><path d="M560 230q6-10 0-20q-6-10 0-20"/><path d="M576 230q6-10 0-20q-6-10 0-20"/><path d="M592 230q6-10 0-20q-6-10 0-20"/></g>
+    <g fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><path class="jet" d="M150 112Q190 60 236 132"/><path class="jet" d="M370 112Q330 60 286 132"/></g>
+    <g fill="#E8F1F7"><rect x="140" y="106" width="20" height="8"/><rect x="360" y="106" width="20" height="8"/></g>
+    <g font-family="Red Hat Text,system-ui,sans-serif" font-size="13" font-weight="700" fill="#E8F1F7" letter-spacing="1">
+     <text x="120" y="52">DECK JETS</text><path d="M160 58V100" stroke="#2BD4D9" stroke-width="1.5"/>
+     <text x="404" y="44">STEEL STAIRS</text><path d="M450 50V96" stroke="#2BD4D9" stroke-width="1.5"/>
+     <text x="532" y="170">HEATER</text>
+     <text x="330" y="394">NEW PLUMBING</text>
+     <text x="180" y="356">CEMENT BOTTOM</text><path d="M240 340L250 322" stroke="#2BD4D9" stroke-width="1.5"/>
+    </g>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<div class="tileband" aria-hidden="true"></div>
+<div class="waterline">
+ <div class="wrap wl-row" aria-label="Highlights from the Google listing">
+  <div><b>5.0</b><span>Google rating</span></div>
+  <div><b>24</b><span>Google reviews</span></div>
+  <div><b>Ronkonkoma</b><span>120 Raynor Ave</span></div>
+  <div><b>Weekdays</b><span>Until 4 PM</span></div>
+ </div>
+</div>
+
+<section id="work">
+ <div class="wrap ledger-wrap">
+  <div class="sticky">
+   <span class="label">Renovation ledger</span>
+   <h2 class="h2">Every part of the pool, line by line.</h2>
+   <p class="intro">One customer's pool needed a week of rebuilding. Another just needed a quick answer. Here is the range of work Jennosa takes on.</p>
+   <a class="btn btn-navy" href="tel:+16317616300" style="margin-top:var(--s3)">Talk it over with Mike</a>
+  </div>
+  <div>
+   <div class="ledger">
+    <div class="row"><span class="no">01</span><div><svg width="40" height="28" viewBox="0 0 40 28" aria-hidden="true"><path d="M2 8H22V22H38" stroke="#0B7C85" stroke-width="4" fill="none"/><rect x="18" y="4" width="8" height="8" fill="#0A1F3A"/></svg><h3>New plumbing</h3></div><p>Replacing the pipes that move water between the pool and the equipment, the part nobody sees until it fails.</p></div>
+    <div class="row"><span class="no">02</span><div><svg width="40" height="28" viewBox="0 0 40 28" aria-hidden="true"><path d="M4 26V8Q4 2 10 2M20 26V8Q20 2 26 2M4 12H20M4 20H20" stroke="#0B7C85" stroke-width="3.5" fill="none"/></svg><h3>Steel stairs</h3></div><p>Swapping old stairs for steel stairs built into the pool wall.</p></div>
+    <div class="row"><span class="no">03</span><div><svg width="40" height="28" viewBox="0 0 40 28" aria-hidden="true"><path d="M2 8Q2 22 14 24H38" stroke="#0B7C85" stroke-width="4" fill="none"/><path d="M8 18l3-3M18 22l3-3M28 22l3-3" stroke="#0A1F3A" stroke-width="2"/></svg><h3>Cement bottoms</h3></div><p>A new cement bottom gives the liner a smooth, solid floor to sit on.</p></div>
+    <div class="row"><span class="no">04</span><div><svg width="40" height="28" viewBox="0 0 40 28" aria-hidden="true"><rect x="8" y="4" width="24" height="22" fill="none" stroke="#0B7C85" stroke-width="3.5"/><path d="M15 20q3-4 0-8M22 20q3-4 0-8" stroke="#C2410C" stroke-width="2.5" fill="none"/></svg><h3>Heaters</h3></div><p>Adding or replacing a pool heater so the swim season starts sooner and runs longer.</p></div>
+    <div class="row"><span class="no">05</span><div><svg width="40" height="28" viewBox="0 0 40 28" aria-hidden="true"><path d="M4 24Q14 2 30 22" stroke="#0B7C85" stroke-width="3.5" fill="none" stroke-dasharray="4 3"/><rect x="0" y="22" width="10" height="5" fill="#0A1F3A"/></svg><h3>Deck jets</h3></div><p>Arcs of water from the deck into the pool. They look great and they are fun on a hot day.</p></div>
+    <div class="row"><span class="no">06</span><div><svg width="40" height="28" viewBox="0 0 40 28" aria-hidden="true"><path d="M2 4H38V24H2Z" fill="none" stroke="#0B7C85" stroke-width="3.5"/><path d="M8 18q4-5 8 0t8 0t8 0" stroke="#0A1F3A" stroke-width="2.5" fill="none"/></svg><h3>New liners</h3></div><p>The finishing layer that sets the color and look of the whole pool.</p></div>
+   </div>
+   <div class="also">
+    <div><h3>Pool openings</h3><p>Getting the pool from closed to swimmable at the start of the season.</p></div>
+    <div><h3>Service</h3><p>Diagnosing problems and fixing them. Reviewers mention quick response times.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="ba" id="before-after">
+ <div class="wrap">
+  <div class="ba-head">
+   <div><span class="label">Before and after</span><h2 class="h2" style="margin:0">Drag to see the renovation.</h2></div>
+   <p class="intro" style="margin:0">Same pool, two drawings. On the left, a torn liner and old fiberglass stairs. On the right, steel stairs, deck jets, a heater and a fresh liner.</p>
+  </div>
+  <div class="compare" id="compare" style="--pos:50%">
+   <svg viewBox="0 0 960 460" role="img" aria-label="Before: an old pool with a torn liner, cloudy green water, cracked bottom and fiberglass stairs">
+    <defs><pattern id="oldl" width="30" height="30" patternUnits="userSpaceOnUse"><rect width="30" height="30" fill="#8FA6A0"/><path d="M15 3L27 15L15 27L3 15Z" fill="#A3B6AF"/></pattern></defs>
+    <rect width="960" height="460" fill="#E3E8E4"/>
+    <path d="M0 150H960V460H0Z" fill="#CFC6B4"/>
+    <rect x="40" y="128" width="880" height="22" fill="#BDB4A2"/>
+    <path d="M110 150V300Q110 360 170 370L460 400H760Q850 400 850 320V150Z" fill="url(#oldl)" stroke="#5B4A2E" stroke-width="5"/>
+    <path d="M116 176V300Q116 354 172 364L460 394H760Q844 394 844 320V176Z" fill="#7E9C6A" opacity=".75"/>
+    <path d="M116 176H844" stroke="#5F7A4E" stroke-width="3"/>
+    <path d="M300 200l20 30-14 18 26 26-18 22" stroke="#3A2E1C" stroke-width="4" fill="none"/>
+    <path d="M640 240l-30 18 22 20-28 30" stroke="#3A2E1C" stroke-width="4" fill="none"/>
+    <path d="M560 160q20 30 0 60q-16 20 6 40" fill="#5B4A2E" opacity=".55"/>
+    <path d="M260 376l30-14 24 18 30-12M520 394l20-18 30 12" stroke="#3A2E1C" stroke-width="3" fill="none"/>
+    <g fill="#E8DEC6" stroke="#8A7A5A" stroke-width="3"><path d="M780 150H850V320Q800 320 790 290Q770 280 770 250Q740 240 740 210Q720 200 720 175Q740 150 780 150Z"/></g>
+    <path d="M760 240q10 10 30 6" stroke="#8A7A5A" stroke-width="3" fill="none"/>
+    <circle cx="420" cy="290" r="10" fill="#5F7A4E" opacity=".7"/><circle cx="480" cy="330" r="7" fill="#5F7A4E" opacity=".7"/>
+    <g font-family="Red Hat Text,system-ui,sans-serif" font-size="17" font-weight="700" fill="#3A2E1C">
+     <text x="246" y="104">Torn, faded liner</text><path d="M310 112L316 196" stroke="#3A2E1C" stroke-width="2"/>
+     <text x="676" y="104">Fiberglass stairs</text><path d="M760 112V160" stroke="#3A2E1C" stroke-width="2"/>
+     <text x="330" y="444">Cracked bottom</text>
+    </g>
+   </svg>
+   <div class="after" aria-hidden="true">
+    <svg viewBox="0 0 960 460">
+     <defs>
+      <pattern id="newl" width="30" height="30" patternUnits="userSpaceOnUse"><rect width="30" height="30" fill="#2C8FC6"/><path d="M15 3L27 15L15 27L3 15Z" fill="#46A9DB"/><path d="M15 10L20 15L15 20L10 15Z" fill="#8FD3F0"/></pattern>
+      <linearGradient id="nw" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#7DE8EC" stop-opacity=".5"/><stop offset="1" stop-color="#0E6E9E" stop-opacity=".55"/></linearGradient>
+     </defs>
+     <rect width="960" height="460" fill="#EAF4F8"/>
+     <path d="M0 150H960V460H0Z" fill="#D9E2E8"/>
+     <rect x="40" y="128" width="880" height="22" fill="#fff" stroke="#B8C7D2" stroke-width="2"/>
+     <path d="M110 150V300Q110 360 170 370L460 400H760Q850 400 850 320V150Z" fill="url(#newl)" stroke="#0A1F3A" stroke-width="5"/>
+     <path d="M116 156H844V170H116Z" fill="#0A1F3A"/>
+     <path d="M116 176V300Q116 354 172 364L460 394H760Q844 394 844 320V176Z" fill="url(#nw)"/>
+     <path d="M116 176H844" stroke="#fff" stroke-width="3"/>
+     <path d="M170 370L460 400H760" stroke="#9AA9B4" stroke-width="10" opacity=".7"/>
+     <g stroke="#0A1F3A" stroke-width="5" fill="none" stroke-linecap="round"><path d="M792 330V160Q792 120 820 120"/><path d="M826 330V160Q826 112 856 112"/></g>
+     <g stroke="#0A1F3A" stroke-width="5"><path d="M792 210H826M792 260H826M792 310H826"/></g>
+     <g fill="none" stroke="#1A7FA8" stroke-width="4" stroke-linecap="round"><path class="jet" d="M210 128Q290 30 380 176"/><path class="jet" d="M560 128Q480 30 400 176"/></g>
+     <g fill="#0A1F3A"><rect x="196" y="120" width="28" height="10"/><rect x="546" y="120" width="28" height="10"/></g>
+     <rect x="880" y="220" width="64" height="86" fill="#0A1F3A"/>
+     <g stroke="#FF8A5B" stroke-width="3" fill="none"><path d="M896 290q7-12 0-24q-7-12 0-24"/><path d="M912 290q7-12 0-24q-7-12 0-24"/><path d="M928 290q7-12 0-24q-7-12 0-24"/></g>
+     <path class="flow" d="M460 410V440H900V306" stroke="#2BD4D9" stroke-width="5" fill="none"/>
+     <g font-family="Red Hat Text,system-ui,sans-serif" font-size="17" font-weight="700" fill="#0A1F3A">
+      <text x="300" y="40">Deck jets</text>
+      <text x="740" y="100" text-anchor="end">Steel stairs</text>
+      <text x="912" y="208" text-anchor="middle">Heater</text>
+      <text x="520" y="432">New plumbing</text>
+      <text x="300" y="250">New liner</text>
+     </g>
+    </svg>
+   </div>
+   <div class="handle" aria-hidden="true"></div>
+   <span class="tagL">Before</span><span class="tagR">After</span>
+   <label class="sr" for="baRange" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Before and after comparison. Move to reveal more of the renovated pool.</label>
+   <input type="range" id="baRange" min="0" max="100" value="50" aria-valuetext="Showing half before, half after">
+  </div>
+  <div class="legend">
+   <div><h3>Before</h3><ul><li>Torn, faded liner and cloudy water</li><li>Old fiberglass stairs</li><li>Cracked bottom under the liner</li></ul></div>
+   <div><h3>After</h3><ul><li>New liner over a smooth cement bottom</li><li>Steel stairs and deck jets</li><li>Heater and new plumbing to the equipment</li></ul></div>
+  </div>
+  <p class="note">Sample tool. Both pools are drawings made for this concept, not photos of a real Jennosa project. On the live site, this slider can use real before and after photos.</p>
+ </div>
+</section>
+
+<section class="addon tilebg" id="book">
+ <div class="wrap">
+  <div class="addon-head">
+   <div>
+    <span class="label">Featured add-on in this concept</span>
+    <h2 class="h2">Book your pool opening online.</h2>
+    <p class="intro">Customers pick a service, a day and a time in under a minute. Mike gets a clean request instead of a phone tag voicemail.</p>
+   </div>
+   <div class="price">
+    <span style="font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:#9FC0D9;font-weight:700">Online booking add-on</span>
+    <b>From $400</b>
+    <span style="font-size:15.5px;color:#D7E6F2">One-time price to add this feature to the website.</span>
+    <ul><li>Service menu for openings and service visits</li><li>Day and time picker set to weekday hours</li><li>Confirmation screen for the customer</li><li>Request sent to the business by email</li></ul>
+   </div>
+  </div>
+
+  <form class="demo booker" id="bookForm" data-done="doneBook" novalidate>
+   <div class="bk-main">
+    <fieldset class="bk-step" id="stSvc">
+     <legend><i>1</i>Choose a service</legend>
+     <div class="opts svc">
+      <div class="opt"><input type="radio" name="svc" id="s1" value="Pool opening" required><label for="s1">Pool opening<small>Start of season</small></label></div>
+      <div class="opt"><input type="radio" name="svc" id="s2" value="Service visit"><label for="s2">Service visit<small>Something is not working</small></label></div>
+      <div class="opt"><input type="radio" name="svc" id="s3" value="Renovation walkthrough"><label for="s3">Renovation walkthrough<small>Talk through a rebuild</small></label></div>
+     </div>
+     <span class="err-msg">Please choose a service.</span>
+    </fieldset>
+    <fieldset class="bk-step" id="stDay">
+     <legend><i>2</i>Pick a weekday</legend>
+     <div class="opts days" id="dayOpts"></div>
+     <span class="err-msg">Please pick a day.</span>
+    </fieldset>
+    <fieldset class="bk-step" id="stTime">
+     <legend><i>3</i>Pick an arrival window</legend>
+     <div class="opts times" id="timeOpts"></div>
+     <span class="err-msg">Please pick a time.</span>
+    </fieldset>
+    <fieldset class="bk-step" style="margin-bottom:0">
+     <legend><i>4</i>Your details</legend>
+     <div class="fgrid">
+      <div class="field"><label for="b-name">Name</label><input type="text" id="b-name" autocomplete="name" required><span class="err-msg">Please add your name.</span></div>
+      <div class="field"><label for="b-phone">Phone</label><input type="tel" id="b-phone" autocomplete="tel" required><span class="err-msg">Please add a phone number.</span></div>
+      <div class="field full"><label for="b-addr">Pool address</label><input type="text" id="b-addr" autocomplete="street-address" required><span class="err-msg">Please add the address.</span></div>
+     </div>
+    </fieldset>
+   </div>
+   <div class="bk-side">
+    <h3>Your request</h3>
+    <dl class="sum" aria-live="polite">
+     <div><dt>Service</dt><dd id="sumSvc" class="empty">Not chosen yet</dd></div>
+     <div><dt>Day</dt><dd id="sumDay" class="empty">Not chosen yet</dd></div>
+     <div><dt>Arrival window</dt><dd id="sumTime" class="empty">Not chosen yet</dd></div>
+    </dl>
+    <div style="margin-top:auto">
+     <button class="btn btn-aqua" type="submit" style="width:100%">Request this visit</button>
+     <p class="demo-note">Demo form. This is a website concept. Nothing is sent or saved.</p>
+     <p class="sample">Sample feature. Days, times and greyed-out slots are made up for the demo. No real calendar is checked and no appointment is booked. Pricing for Jennosa's own services is not shown.</p>
+    </div>
+   </div>
+  </form>
+  <div class="done" id="doneBook" hidden tabindex="-1">
+   <h3>Demo complete.</h3>
+   <p id="doneBookText">This is a website concept, so nothing was sent or saved and no visit was booked.</p>
+   <button class="btn btn-navy start-over" type="button">Start over</button>
+  </div>
+ </div>
+</section>
+
+<section id="reviews">
+ <div class="wrap">
+  <span class="label">Google reviews</span>
+  <h2 class="h2" style="margin-bottom:var(--s6)">What customers say about the work.</h2>
+  <div class="rv-grid">
+   <figure class="rv big"><blockquote>"They came in diagnosed the problem and spent a week rebuilding my pool."</blockquote><figcaption>Google review</figcaption></figure>
+   <figure class="rv sm"><blockquote>"Easy company to communicate with and quick response times on any questions."</blockquote><figcaption>Google review</figcaption></figure>
+   <figure class="rv sm"><blockquote>"I highly recommend them if you require pool services."</blockquote><figcaption>Google review</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+ <div class="wrap contact-grid">
+  <div>
+   <span class="label">Visit or call</span>
+   <h2 class="h2">Jennosa Pools, Inc.</h2>
+   <dl class="spec">
+    <div><dt>Phone</dt><dd><a href="tel:+16317616300">(631) 761-6300</a></dd></div>
+    <div><dt>Address</dt><dd>120 Raynor Ave<br>Ronkonkoma, NY 11779</dd></div>
+    <div><dt>Hours</dt><dd>Monday to Friday, closes 4 PM<br><span style="font-size:15px;color:var(--muted)">Opening time and weekend hours to confirm.</span></dd></div>
+    <div><dt>Ask for</dt><dd>Mike</dd></div>
+   </dl>
+  </div>
+  <div>
+   <form class="demo contact" data-done="doneContact" novalidate>
+    <h3 style="font-size:24px;margin-bottom:var(--s4)">Send Mike a question</h3>
+    <div class="fgrid">
+     <div class="field"><label for="c-name">Name</label><input type="text" id="c-name" autocomplete="name" required><span class="err-msg">Please add your name.</span></div>
+     <div class="field"><label for="c-phone">Phone</label><input type="tel" id="c-phone" autocomplete="tel" required><span class="err-msg">Please add a phone number.</span></div>
+     <div class="field full"><label for="c-topic">Topic</label><select id="c-topic" required><option value="">Choose one</option><option>Renovation</option><option>New liner</option><option>Heater or plumbing</option><option>Opening or service</option><option>Something else</option></select><span class="err-msg">Please choose a topic.</span></div>
+     <div class="field full"><label for="c-msg">Question</label><textarea id="c-msg" required></textarea><span class="err-msg">Please add your question.</span></div>
+    </div>
+    <button class="btn btn-navy" type="submit" style="margin-top:var(--s4)">Send question</button>
+    <p class="demo-note">Demo form. This is a website concept. Nothing is sent or saved.</p>
+   </form>
+   <div class="done" id="doneContact" hidden tabindex="-1" style="border:1px solid var(--grout);border-top:6px solid var(--aqua)">
+    <h3>Demo complete.</h3>
+    <p>This is a website concept, so nothing was sent or saved.</p>
+    <button class="btn btn-navy start-over" type="button">Start over</button>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="tilebg">
+ <div class="wrap">
+  <div class="f-grid">
+   <div><h3>Jennosa Pools, Inc.</h3><p>Pool renovations, pool openings and service in Ronkonkoma, NY.</p></div>
+   <div><h3>Contact</h3><p><a href="tel:+16317616300">(631) 761-6300</a><br>120 Raynor Ave<br>Ronkonkoma, NY 11779</p></div>
+   <div><h3>Hours</h3><p>Monday to Friday, closes 4 PM</p></div>
+  </div>
+  <p class="disclaimer">Independent website concept designed by Lisette Colon. Not affiliated with or approved by Jennosa Pools, Inc. Address, hours, rating and review quotes are from the business's public Google listing, checked October 2026. Short service descriptions are written for this concept, service list to confirm with the owner. The cross-section, before and after drawings are illustrations, not photos of real projects. The online booking add-on ($400 and up is Lisette Colon's price to build it, not a Jennosa price) and all forms are sample features; nothing is sent, saved or booked.</p>
+ </div>
+</footer>
+<a class="btn btn-aqua sticky-call" href="tel:+16317616300">Call (631) 761-6300</a>
+
+<script>
+(function(){
+ var btn=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
+ btn.addEventListener('click',function(){var o=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!o));btn.textContent=o?'Menu':'Close';nav.classList.toggle('open',!o)});
+ nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){btn.setAttribute('aria-expanded','false');btn.textContent='Menu';nav.classList.remove('open')})});
+
+ // before/after
+ var cmp=document.getElementById('compare'),rng=document.getElementById('baRange');
+ function setPos(v){cmp.style.setProperty('--pos',v+'%');rng.setAttribute('aria-valuetext',v<15?'Mostly the renovated pool':v>85?'Mostly the old pool':'Showing '+Math.round(v)+' percent before')}
+ rng.addEventListener('input',function(){setPos(rng.value)});
+
+ // booking days and times
+ var dayBox=document.getElementById('dayOpts'),timeBox=document.getElementById('timeOpts');
+ var d=new Date();d.setDate(d.getDate()+1);var n=0,html='';
+ var dn=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],mn=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+ while(n<10){var w=d.getDay();if(w>0&&w<6){var id='d'+n,full=dn[w]+', '+mn[d.getMonth()]+' '+d.getDate();var off=(n===2||n===7);
+  html+='<div class="opt"><input type="radio" name="day" id="'+id+'" value="'+full+'"'+(off?' disabled':'')+(n===0?' required':'')+'><label for="'+id+'">'+dn[w]+'<small>'+mn[d.getMonth()]+' '+d.getDate()+(off?', full':'')+'</small></label></div>';n++}
+  d.setDate(d.getDate()+1)}
+ dayBox.innerHTML=html;
+ var times=['8:00 to 9:00 AM','9:30 to 10:30 AM','11:00 AM to 12 PM','12:30 to 1:30 PM','2:00 to 3:00 PM'];
+ timeBox.innerHTML=times.map(function(t,i){return '<div class="opt"><input type="radio" name="time" id="t'+i+'" value="'+t+'"'+(i===0?' required':'')+'><label for="t'+i+'">'+t.replace(' to ','<small>to ')+'</small></label></div>'}).join('');
+ function upd(name,el){var c=document.querySelector('input[name='+name+']:checked');var dd=document.getElementById(el);if(c){dd.textContent=c.value;dd.classList.remove('empty')}else{dd.textContent='Not chosen yet';dd.classList.add('empty')}}
+ document.getElementById('bookForm').addEventListener('change',function(e){if(e.target.name==='svc')upd('svc','sumSvc');if(e.target.name==='day')upd('day','sumDay');if(e.target.name==='time')upd('time','sumTime');var fs=e.target.closest('.bk-step');if(fs&&e.target.type==='radio')fs.classList.remove('err')});
+
+ document.querySelectorAll('form.demo').forEach(function(f){
+  var done=document.getElementById(f.dataset.done);
+  f.addEventListener('submit',function(e){e.preventDefault();var first=null;
+   ['svc','day','time'].forEach(function(nm){var g=f.querySelectorAll('input[name='+nm+']');if(!g.length)return;var ok=!!f.querySelector('input[name='+nm+']:checked');var fs=g[0].closest('.bk-step');fs.classList.toggle('err',!ok);if(!ok&&!first)first=f.querySelector('input[name='+nm+']:not(:disabled)')});
+   f.querySelectorAll('.field [required]').forEach(function(i){var ok=i.value.trim()!=='';i.closest('.field').classList.toggle('err',!ok);i.setAttribute('aria-invalid',String(!ok));if(!ok&&!first)first=i});
+   if(first){first.focus();return}
+   if(f.id==='bookForm'){var s=f.querySelector('input[name=svc]:checked').value,dy=f.querySelector('input[name=day]:checked').value,tm=f.querySelector('input[name=time]:checked').value;
+    document.getElementById('doneBookText').textContent='You picked: '+s+' on '+dy+', '+tm+'. This is a website concept, so nothing was sent or saved and no visit was booked. On the live site, Jennosa would get this request and confirm with you.'}
+   f.hidden=true;done.hidden=false;done.focus()});
+  done.querySelector('.start-over').addEventListener('click',function(){f.reset();f.querySelectorAll('.err').forEach(function(x){x.classList.remove('err')});['sumSvc','sumDay','sumTime'].forEach(function(id){var el=document.getElementById(id);if(el){el.textContent='Not chosen yet';el.classList.add('empty')}});done.hidden=true;f.hidden=false;f.querySelector('input:not(:disabled),select').focus()});
+ });
+})();
+</script>
+</body>
+</html>
